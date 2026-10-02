@@ -1,0 +1,38 @@
+{
+  "name": "welder-social-manager",
+  "version": "1.0.0",
+  "description": "Turn your AI into your social media manager. Post from chat, schedule content and learn what your audience responds to.",
+  "author": {
+    "name": "Welder",
+    "email": "hello@weldergtm.com",
+    "url": "https://weldergtm.com"
+  },
+  "homepage": "https://weldergtm.com",
+  "repository": "https://github.com/smvls/welder-plugins",
+  "license": "MIT",
+  "keywords": [
+    "social-media-manager",
+    "social-media",
+    "content-scheduling",
+    "social-media-automation",
+    "content-calendar",
+    "video-publishing",
+    "instagram-reels",
+    "instagram-stories",
+    "tiktok",
+    "youtube-shorts",
+    "bluesky",
+    "threads",
+    "x",
+    "content-marketing",
+    "creator-tools",
+    "social-analytics",
+    "cross-posting"
+  ],
+  "displayName": "Welder: Social Media Manager",
+  "icon": "./assets/logo.png",
+  "privacyPolicyUrl": "https://weldergtm.com/privacy",
+  "supportUrl": "https://weldergtm.com/support",
+  "documentationUrl": "https://weldergtm.com/docs",
+  "termsOfServiceUrl": "https://weldergtm.com/terms"
+}

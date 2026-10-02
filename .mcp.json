@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "welder": { "type": "http", "url": "https://weldergtm.com/mcp" }
+  }
+}
