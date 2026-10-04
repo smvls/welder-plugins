@@ -1,9 +1,9 @@
 {
   "name": "welder-social-manager",
-  "version": "1.0.0",
-  "description": "Turn your AI into your social media manager. Post from chat, schedule content and learn what your audience responds to.",
+  "version": "1.0.1",
+  "description": "Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat. Publish approved content now or schedule it for later.",
   "author": {
-    "name": "Welder",
+    "name": "Endless River",
     "email": "hello@weldergtm.com",
     "url": "https://weldergtm.com"
   },
@@ -11,11 +11,19 @@
   "repository": "https://github.com/smvls/welder-plugins",
   "license": "MIT",
   "keywords": [
+    "autoposting",
+    "autopost",
+    "social-media-autoposting",
+    "tiktok-autoposting",
+    "instagram-autoposting",
+    "youtube-autoposting",
+    "social-media-scheduling",
+    "instagram",
+    "youtube",
     "social-media-manager",
     "social-media",
     "content-scheduling",
     "social-media-automation",
-    "content-calendar",
     "video-publishing",
     "instagram-reels",
     "instagram-stories",
@@ -29,7 +37,7 @@
     "social-analytics",
     "cross-posting"
   ],
-  "displayName": "Welder: Social Media Manager",
+  "displayName": "Welder: TikTok, Instagram & YouTube Autoposting",
   "icon": "./assets/logo.png",
   "privacyPolicyUrl": "https://weldergtm.com/privacy",
   "supportUrl": "https://weldergtm.com/support",
