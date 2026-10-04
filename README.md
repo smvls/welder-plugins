@@ -1,8 +1,10 @@
-# Welder: Social Media Manager
+# Welder: TikTok, Instagram & YouTube Autoposting
 
-## You create. Your AI gets it out there.
+## Autopost to six networks from one chat
 
-Turn your AI assistant into your social media manager. Post the video you just made, schedule tomorrow's carousel and find what your audience responds to — all from the conversation you're already having.
+Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat.
+
+Publish your finished videos, photos, carousels and text, or schedule approved content up to 30 days ahead. Choose your connected accounts, approve the content and let your assistant handle the posting. Review available performance and prepare replies without leaving the conversation.
 
 ### One message. Your accounts.
 

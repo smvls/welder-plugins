@@ -1,7 +1,7 @@
 {
   "name": "welder-plugins",
   "owner": {
-    "name": "Welder",
+    "name": "Endless River",
     "email": "hello@weldergtm.com",
     "url": "https://weldergtm.com"
   },
@@ -9,11 +9,11 @@
     {
       "name": "welder-social-manager",
       "source": "./",
-      "description": "Turn your AI into your social media manager. Post from chat, schedule content and learn what your audience responds to.",
-      "version": "1.0.0"
+      "description": "Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat. Publish approved content now or schedule it for later.",
+      "version": "1.0.1"
     }
   ],
   "metadata": {
-    "description": "Give your AI the ability to post, schedule and review social content."
+    "description": "Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat. Publish approved content now or schedule it for later."
   }
 }
