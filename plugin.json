@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "welder-social-manager",
-  "version": "1.0.1",
-  "description": "Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat. Publish approved content now or schedule it for later.",
+  "version": "1.3.0",
+  "description": "Make a post in your AI chat and Welder puts it on TikTok, Instagram, YouTube, Facebook Pages, Threads, Bluesky and X — now or on a schedule.",
   "author": {
     "name": "Endless River",
     "email": "hello@weldergtm.com",
@@ -43,7 +43,7 @@
       "interface": {
         "displayName": "Welder: Social Autoposting",
         "shortDescription": "TikTok, Instagram & YouTube",
-        "longDescription": "Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat.\n\nPublish your finished videos, photos, carousels and text, or schedule approved content up to 30 days ahead. Choose your connected accounts, approve the content and let your assistant handle the posting. Review available performance and prepare replies without leaving the conversation.\n\nPOST FROM YOUR CHAT\nShare videos, photos, carousels and text to your connected TikTok, Instagram, YouTube, Threads, Bluesky and X accounts. Your assistant handles the upload, checks network requirements and reports the result for each account. Chat apps give you an upload link; coding apps upload directly.\n\nGET AHEAD OF YOUR NEXT POST\nPlan content with your assistant and schedule the posts you approve up to 30 days ahead. Stop pending posts when plans change. Different captions for different networks are separate posts.\n\nMAKE MORE OF WHAT WORKS\nAsk which posts people responded to, compare available metrics and turn the evidence into your next creative brief. Read comments and prepare replies where the network supports them.\n\nKEEP CONTENT MOVING\nCreators share finished videos without jumping between upload screens. Small businesses plan their next week from one conversation. Social media managers choose the right profiles and check every result. Builders connect existing content workflows to their audience. Recurring agent tasks use the host's scheduling feature when supported and requested.\n\nCONNECT ONCE\nSign in to Welder and connect your own accounts. Provider consent happens in your browser. Read access supports reports; publishing access supports uploads and posts. Welder provides publishing and data; your assistant helps create the content.\n\nAn existing Welder account with publishing access is required. X access requires the appropriate account entitlement. Supported formats, analytics and replies depend on network permissions; unavailable metrics are identified. Threads currently requires approved app-tester access. Live-post deletion is supported on X and Bluesky only. Public visibility is the default when supported. Welder does not guarantee reach or growth.",
+        "longDescription": "Make a post in ChatGPT and Welder puts it on TikTok, Instagram, YouTube, Facebook Pages, Threads, Bluesky and X — now or at a time you choose. Turn a photo or video into a post, write a text post, or plan your week in one conversation. You see every post before it goes live.\n\nPOST FROM YOUR CHAT\nShare videos, photos, carousels and text to your connected TikTok, Instagram, Facebook Page, YouTube, Threads, Bluesky and X accounts. Your assistant handles the upload, checks network requirements and reports the result for each account. Attach a file in the chat or let a coding app upload it directly.\n\nGET AHEAD OF YOUR NEXT POST\nPlan content with your assistant and schedule the posts you approve up to 30 days ahead. Stop pending posts when plans change. Use per-network captions within one post where available.\n\nMAKE MORE OF WHAT WORKS\nAsk which posts people responded to, compare available metrics and turn the evidence into your next creative brief. Read comments and prepare replies where the network supports them.\n\nKEEP CONTENT MOVING\nCreators share finished videos without jumping between upload screens. Small businesses plan their next week from one conversation. Social media managers choose the right profiles and check every result. Builders connect existing content workflows to their audience. Recurring agent tasks use the host's scheduling feature when supported and requested.\n\nCONNECT ONCE\nSign in to Welder and connect your own accounts. Provider consent happens in your browser. Read access supports reports; publishing access supports uploads and posts. Welder provides publishing and data; your assistant helps create the content.\n\nYou sign in to Welder, or create an account, when you connect. X access requires the appropriate account entitlement. Supported formats, analytics and replies depend on network permissions; unavailable metrics are identified. Live-post deletion is supported on X and Bluesky, and on YouTube and Facebook where the connection allows it. For TikTok, your assistant asks who can see each video. Welder does not guarantee reach or growth.",
         "developerName": "Endless River",
         "category": "Business & Operations",
         "capabilities": [
@@ -57,9 +57,9 @@
         "privacyPolicyURL": "https://weldergtm.com/privacy",
         "termsOfServiceURL": "https://weldergtm.com/terms",
         "defaultPrompt": [
-          "Post my latest video to my connected TikTok and Instagram accounts.",
-          "Plan next week's content and show me the posts before scheduling them.",
-          "Review my posts this month and suggest three ideas to test."
+          "Write a post about my business and share it on Facebook and Threads",
+          "Post my photo to Instagram with a caption you write",
+          "Plan 3 posts for this week and show me each one before it goes out"
         ],
         "brandColor": "#FF4FA0",
         "brandColorDark": "#FF4FA0",
@@ -92,9 +92,9 @@
             },
             {
               "description": "Review available performance evidence",
-              "prompt": "Review the demo\u2019s sample posts from September 25 to October 4, 2026. Which measured post got the best response, and what should I try next?",
+              "prompt": "Review the demo’s sample posts from September 25 to October 4, 2026. Which measured post got the best response, and what should I try next?",
               "tools_triggered": "get_context, get_analytics, get_post_analytics",
-              "expected_behavior": "Query the exact September 25\u2013October 4, 2026 fixture window. Report the seeded sample metrics with capture dates and an explicit synthetic-data label. Distinguish missing metrics from zero and propose an experiment without claiming causation or guaranteed growth. Relative current-period queries must not fabricate fresh observations."
+              "expected_behavior": "Query the exact September 25–October 4, 2026 fixture window. Report the seeded sample metrics with capture dates and an explicit synthetic-data label. Distinguish missing metrics from zero and propose an experiment without claiming causation or guaranteed growth. Relative current-period queries must not fabricate fresh observations."
             },
             {
               "description": "Read feedback and prepare a reply",
@@ -106,8 +106,8 @@
           "negative": [
             {
               "description": "An unsupported network",
-              "prompt": "Publish my video to LinkedIn and Facebook right now.",
-              "expected_behavior": "Explain that Welder does not support those networks and do not create a post."
+              "prompt": "Publish my video to LinkedIn right now.",
+              "expected_behavior": "Explain that Welder does not support LinkedIn, name the supported networks and do not create a post."
             },
             {
               "description": "Access to another customer's workspace",
@@ -126,7 +126,7 @@
         "commerce_description": "MCP tools publish user-approved content and read account data; they do not initiate checkout, purchases or financial transactions."
       },
       "publication": {
-        "release_notes": "Clarifies social autoposting in the listing name, subtitle and opening description; supported networks and approval requirements are explicit. Publishing behavior and workflows are unchanged."
+        "release_notes": "Clarifies how to start: make a post in chat and post it now or at a time you choose. New starter prompts, Facebook Pages listed with the other networks, guidance for attached files and access notices. Tool names stay the same; supported hosts gain attached files, batch uploads and per-network captions. Results open with a short status line and a setup step."
       }
     }
   }

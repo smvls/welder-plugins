@@ -1,7 +1,7 @@
 {
   "name": "welder-social-manager",
-  "version": "1.0.1",
-  "description": "Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat. Publish approved content now or schedule it for later.",
+  "version": "1.3.0",
+  "description": "Post what you make with Claude to TikTok, Instagram, YouTube, Facebook, Threads, Bluesky and X — now or on a schedule.",
   "author": {
     "name": "Endless River",
     "email": "hello@weldergtm.com",
