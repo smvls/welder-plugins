@@ -9,11 +9,11 @@
     {
       "name": "welder-social-manager",
       "source": "./",
-      "description": "Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat. Publish approved content now or schedule it for later.",
-      "version": "1.0.1"
+      "description": "Post what you make with Claude to TikTok, Instagram, YouTube, Facebook, Threads, Bluesky and X — now or on a schedule.",
+      "version": "1.3.0"
     }
   ],
   "metadata": {
-    "description": "Autopost to TikTok, Instagram, YouTube, Threads, Bluesky and X from your AI chat. Publish approved content now or schedule it for later."
+    "description": "Post what you make with Claude to TikTok, Instagram, YouTube, Facebook, Threads, Bluesky and X — now or on a schedule."
   }
 }
