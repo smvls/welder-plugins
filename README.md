@@ -38,9 +38,9 @@ Welder provides the connection, posting, scheduling and account data. Your assis
 
 Install the plugin in your supported assistant, sign in to [Welder](https://weldergtm.com) or create an account when you connect, and connect your social accounts when a post needs them. Provider sign-in happens on the network's own website. You do not share social passwords with your assistant.
 
-Attach a file in the chat where your assistant supports it; coding apps upload files directly; an upload link remains as a fallback. One post can carry per-network captions through `options.<network>.caption`. YouTube visibility defaults to public when the account allows it; for TikTok, your assistant asks who can see each video. Your assistant can use the options you approve.
+Attach a photo or video in the chat and your assistant passes it to Welder; coding apps upload local files directly. One post can carry per-network captions through `options.<network>.caption`. YouTube visibility defaults to public when the account allows it; for TikTok, your assistant asks who can see each video. Your assistant can use the options you approve.
 
-Read access supports context, account lists and stored performance reports. Uploading, connecting accounts, posting, canceling and deleting require publishing access. Waiting for upload links, refreshing post metrics and reading comments also require publishing access because they may update state or consume account usage. X posting and comment reads require the appropriate X entitlement. Account and format support depend on each network's permissions. Some analytics and comment permissions remain unavailable; Welder identifies missing data rather than reporting it as zero. Live-post deletion is supported on X and Bluesky, and on YouTube and Facebook where the connection allows it.
+Read access supports context, account lists and stored performance reports. Uploading, connecting accounts, posting, canceling and deleting require publishing access. Refreshing post metrics and reading comments also require publishing access because they may update state or consume account usage. X posting and comment reads require the appropriate X entitlement. Account and format support depend on each network's permissions. Some analytics and comment permissions remain unavailable; Welder identifies missing data rather than reporting it as zero. Live-post deletion is supported on X and Bluesky, and on YouTube and Facebook where the connection allows it.
 
 ## What Welder adds
 
@@ -54,7 +54,7 @@ On top of that access, Welder provides:
 - **One request, many networks:** a single post can go to several networks and accounts, with a different caption per network.
 - **One scheduler:** approved posts can be scheduled up to 30 days ahead across all networks, and pending ones can be canceled.
 - **Publishing that survives failures:** every network gets its own queue entry with saved progress and resumable uploads. Retrying with the same `idempotency_key` never creates a duplicate. If a network loses a response, Welder checks whether the post went out instead of posting again.
-- **Media handling for chat:** assistants that cannot send files get a short-lived upload link, and images are prepared for each network's format.
+- **Media handling for chat:** photos and videos attached in the chat reach Welder with no separate upload step for the person, and images are prepared for each network's format.
 - **Results across networks:** post metrics and supported comments in one place. Data a network does not share is reported as missing, never as zero.
 - **Account safety:** network tokens are encrypted on Welder's servers and never reach the assistant. Access is scoped, a person can grant read-only access, and tools that publish are marked so the host asks first.
 
